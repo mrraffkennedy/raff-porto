@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- WAJIB: Load CSS & Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Pastikan path benar -->
+</head>
+<body>
+  <div class="dashboard-header">
+    <h1><i class="material-icons">photo_library</i> Photo Gallery</h1>
+    <a href="services.html" class="back-btn">
+      <i class="material-icons">arrow_back</i> Back to Services
+    </a>
+  </div>
+
+  <div class="filter-controls">
+    <input type="text" placeholder="Search photos..." class="search-box">
+    <select class="category-filter">
+      <option value="all">All Categories</option>
+      <option value="nature">Nature</option>
+    </select>
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo-card" data-category="nature">
+      <img src="assets/images/scout-1.jpeg" alt="scouting base">
+      <div class="photo-info">
+        <h3>scouting moment</h3>
+        <p>praja, muda & tunas kelapa</p>
+        <button class="download-btn">
+          <i class="material-icons">download</i>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mochammad Rafi - Portfolio</title>
+  <!-- google font icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- local css file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <a><i class="menu material-icons"> menu </i></a>
+    <nav class="navbar">
+      <a href="#">home</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <h1 class="hero-text">
+      hello, i'm <br />
+      <span>Mochammad Rafi</span>
+    </h1>
+    <p>this is my resume</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <h1 class="heading">featured <span>portfolio</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="assets/images/project.jpg" alt="Login Form Project">
+          <div class="content">
+            <h2>Login Form</h2>
+            <p>Created a responsive login form with validation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="assets/images/raff-pict.jpg" alt="Mochammad Rafi" />
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="heading">about <span>me</span></h1>
+        <p>
+          Hallo guys, aku anak TKJ, ngulik mikrotik sampe paham dalemannya. Coding? Gaskeun!. 
+          Di luar kelas, aku sering ngangkat beban di rumah or gym biar badan nggak cuma jago ngetik, 
+          tapi juga kuat ngangkat monitor gede, wkwk. Hidupku seimbang, antara jadi tech geek sama fitness freak. 
+          Buat aku, otak cerdas harus diimbangi sama badan sehat, biar nggak cuma jago depan layar tapi juga siap action di dunia nyata. 
+          Pokoknya, hidup gw itu work hard, lift harder!😉
+        </p>
+        <a href="assets/cv-moch-raffi.pdf" class="btn" download>download cv</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h1 class="heading">my <span>services</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="icon material-icons">grid_view</i>
+        <h2>Photo Enhancement</h2>
+        <p>Batch Editing photo, Retouching, Photo restoration .</p>
+        <a href="photo-dashboard.html" class="btn-2">
+          learn more <i class="material-icons">navigate_next</i>
+        </a>
+      </div>
+      <div class="box">
+        <i class="icon material-icons">smart_display</i>
+        <h2>Graphic Design</h2>
+        <p>Freelancing Graphic Design for any kind of Post, Banner, Web Poster, ADs, Story, Festival Post, Video Editing.</p>
+        <a href="design-dashboard.html" class="btn-2">
+          learn more <i class="material-icons">navigate_next</i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h1 class="heading">get <span>in touch</span></h1>
+    <div class="col-container">
+      <form id="contactForm" class="col">
+        <h2>get in touch</h2>
+        <input type="text" name="name" placeholder="your name" required>
+        <input type="email" name="email" placeholder="your email" required>
+        <input type="tel" name="phone" placeholder="your phone">
+        <textarea name="message" placeholder="write a message" cols="30" rows="10" required></textarea>
+        <button type="submit" class="btn">send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer" id="footer">
+    <div class="socials">
+      <a href="https://twitter.com/MochRafi27" target="_blank" rel="noopener">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://wa.me/6287761424665" target="_blank" rel="noopener">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/share/16Ldfw6z22/" target="_blank" rel="noopener">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/papa.offside_?igsh=MWhjOHV5amxraWg2dQ==" target="_blank" rel="noopener">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
+    <p>&copy; Mochammad Rafi 2025. All rights reserved.</p>
+  </section>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
+  <script>
+    emailjs.init('utK6I8zQg3eym1UyD');
+  </script>
+</body>
+</html>
